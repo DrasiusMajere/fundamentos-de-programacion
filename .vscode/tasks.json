@@ -1,0 +1,42 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+   "version": "0.1.0",  
+    "tasks": [
+        {
+            "taskName": "build",
+             "command": "go",
+            "isShellCommand": true,
+            "args": ["build"],
+            "showOutput": "always",
+            "isBuildCommand": true
+        },
+        {
+            "taskName": "run",
+            "command": "go",
+            "isShellCommand": true,
+            "args": ["run", "${file}"],
+            "showOutput": "always"
+        },
+        {
+            "taskName": "install",
+            "command": "go",
+            "isShellCommand": true,
+            "args": ["install"],
+            "showOutput": "always"
+        },
+        {
+            "taskName": "clean",
+            "command": "go",
+            "isShellCommand": true,
+            "args": ["clean"],
+            "showOutput": "always"
+        },
+          {
+            "taskName": "exe",
+            "command": "hello.exe",
+            "isShellCommand": true,
+            "showOutput": "always"
+        }              
+    ]
+}
